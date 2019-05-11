@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Secret Music</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <meta id="viewport" name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no">
+    <style>
+        html, body, iframe {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0
+        }
+
+        #wrap {
+            width: 100%;
+            height: 100%;
+        }
+
+        iframe {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">不羁阁音乐播放器</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" onclick="linking2()">阁内播放器</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" onclick="linking()">网易云音乐</a>
+        </li>
+    </ul>
+</nav>
+<iframe src="static/secret.html" frameborder="0" id="iiframe"></iframe>
+<script>
+    function linking() {
+        var page1 = document.getElementById('iiframe');
+        page1.src = 'http://sioxas.github.io/'
+    }
+
+    function linking2() {
+        var page1 = document.getElementById('iiframe');
+        page1.src = 'static/secret.html'
+    }
+</script>
+</body>
+</html>
