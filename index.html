@@ -3,10 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Secret Music</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/mdui/0.4.2/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.2/js/mdui.js"></script>
     <meta id="viewport" name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no">
     <style>
         html, body, iframe {
@@ -27,17 +25,18 @@
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">不羁阁音乐播放器</a>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" onclick="linking2()">阁内播放器</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="http://sioxas.github.io/">网易云音乐</a>
-        </li>
-    </ul>
-</nav>
+<div class="mdui-appbar mdui-color-blue-600 mdui-shadow-12">
+  <div class="mdui-toolbar mdui-color-theme">
+<!--    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>-->
+    <a href="javascript:;" class="mdui-typo-title">不羁阁音乐社</a>
+    <div class="mdui-toolbar-spacer"></div>
+  </div>
+  <div class="mdui-tab mdui-color-theme">
+    <a onclick="linking2()" class="mdui-ripple mdui-ripple-white">播放器</a>
+    <a onclick="linking3()" class="mdui-ripple mdui-ripple-white">专辑</a>
+    <a href="http://sioxas.github.io/" class="mdui-ripple mdui-ripple-white">网易云</a>
+  </div>
+</div>
 <iframe src="static/secret.html" frameborder="0" id="iiframe"></iframe>
 <script>
     function linking() {
@@ -48,6 +47,10 @@
     function linking2() {
         var page1 = document.getElementById('iiframe');
         page1.src = 'static/secret.html'
+    }
+    function linking3() {
+        var page1 = document.getElementById('iiframe');
+        page1.src = 'static/cd.html'
     }
 </script>
 </body>

@@ -29,4 +29,4 @@ if __name__ == '__main__':
     with open(filename) as f:
         reader = csv.reader(f)
         data = list(reader)
-        generate_json(data,'https://vlityacid-my.sharepoint.com/:i:/g/personal/cc07_vlity_com/EcUxuQxXxIxPjN613tp1WCgBHVG_dpcMWtFjkEVkyaCtKA?e=P53IJg','星之海')
+        generate_json(data,'https://vlityacid-my.sharepoint.com/:i:/g/personal/cc07_vlity_com/EZlIBganXw1Ll3Am52dRLhMB618-TzqoYqsKUlCxLF_jDg?e=avDeqZ','亚特兰蒂斯')
